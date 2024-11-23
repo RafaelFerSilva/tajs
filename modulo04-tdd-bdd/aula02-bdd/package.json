@@ -1,0 +1,22 @@
+{
+  "name": "aula01-setup-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js",
+    "test:dev": "node --watch node_modules/.bin/cucumber-js --fail-fast --format progress --format html:cucumber-report.html",
+    "test:debug": "node --watch --inspect-brk node_modules/.bin/cucumber-js --fail-fast --format progress --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "rafael",
+  "type": "module",
+  "engines": {
+    "node": "v20.11.1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.1.0",
+    "sinon": "^17.0.1"
+  }
+}
