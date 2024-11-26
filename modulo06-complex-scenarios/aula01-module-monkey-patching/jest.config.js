@@ -1,0 +1,18 @@
+/**
+ * For a detailed explanation regarding each configuration property, visit:
+ */
+
+/** @type {import('jest').Config} */
+const config = {
+  clearMocks: true,
+  restoreMocks: true,
+  coverageProvider: "v8",
+  collectCoverage: true,
+  testEnvironment: "node",
+  testRunner: "jest-circus/runner",
+  transform: {
+    "^.+\\.jsx?$": "babel-jest"
+  }
+};
+
+module.exports = config;
